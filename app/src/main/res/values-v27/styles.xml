@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="LightTheme">
+        <item name="android:statusBarColor">@color/material_statusbar</item>
+        <item name="android:navigationBarColor">@color/material_statusbar</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="ClearBars" parent="AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">@color/material_statusbar</item>
+        <item name="android:navigationBarColor">@color/material_statusbar</item>
+    </style>
+</resources>

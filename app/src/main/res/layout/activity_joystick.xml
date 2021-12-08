@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_videogame_asset" />
+
+    <TextView
+        android:id="@+id/joystick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/joystick"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/uicolor_text_high"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joystick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/where_from_spoof"
+        android:textColor="@color/uicolor_text_medium"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/startpoint_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/summary"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/materialborder_layout">
+
+        <TextView
+            android:id="@+id/from_current_loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_near_me"
+            android:drawablePadding="5dp"
+            android:foreground="@drawable/material_ripple"
+            android:padding="10dp"
+            android:text="@string/from_current_loc"
+            android:textColor="@color/uicolor_text_medium" />
+
+        <TextView
+            android:id="@+id/select_on_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/from_current_loc"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="5dp"
+            android:foreground="@drawable/material_ripple"
+            android:padding="10dp"
+            android:text="@string/select_on_map"
+            android:textColor="@color/uicolor_text_medium" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/speed_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startpoint_container"
+        android:layout_marginTop="10dp"
+        android:text="@string/joystick_max_speed" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/speed_hint"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="10dp">
+
+        <EditText
+            android:id="@+id/max_speed"
+            style="@style/uisearchview"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:drawableStart="@drawable/speedometer"
+            android:hint="@string/speed"
+            android:inputType="number"
+            android:maxLength="3" />
+
+        <TextView
+            android:id="@+id/speed_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="km/h"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/altitude_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/istyle_button_above_text"
+        android:layout_above="@id/btn_continue"
+        android:textColor="@color/error"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="@string/joystick_altitude_warn" />
+
+
+    <android.widget.Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ignore"
+        android:layout_marginBottom="@dimen/istyle_button_above_text"
+        android:background="@drawable/istyle_corner_button"
+        android:stateListAnimator="@null"
+        android:text="@string/start_joystick"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_ui_text" />
+
+    <TextView
+        android:id="@+id/ignore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/back"
+        android:textColor="@color/blue_ui_color"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="@color/stick_pressed"/>
+
+<corners android:radius="12dp" />
+<!--
+Neccessary make changeble radius, to user can set
+design, square or rounded.
+-->
+</shape>

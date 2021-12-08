@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/static_spoof"
+        android:enabled="true"
+        android:icon="@drawable/ic_near_me"
+        android:title="@string/static_spoof"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/route_spoof"
+        android:enabled="true"
+        android:icon="@drawable/ic_directions_car_black_24dp"
+        android:title="@string/route_spoof"
+        app:showAsAction="ifRoom"/>
+</menu>

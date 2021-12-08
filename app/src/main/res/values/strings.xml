@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">Listick Fake GPS</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="settings">Settings</string>
+    <string name="continue_text">Continue</string>
+    <string name="permissions">Permissions</string>
+    <string name="need_permissions">For continue work Listick Fake GPS requests next permissions:</string>
+    <string name="error_get_currentloc">Error to get current location.</string>
+    <string name="mock_location_permission">Mock Locations Permission</string>
+    <string name="open_developer_settings">Enable Mock Locations</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="unknown">Unknown</string>
+    <string name="search_by_coordinates">Search by coordinates</string>
+    <string name="Address">Address:</string>
+    <string name="enter_value">Enter value!</string>
+    <string name="settings_of_accuracy">Settings of accuracy: ±%1$s</string>
+    <string name="enter_accuracy_value">Please write this field only digits. You value is approximate.</string>
+    <string name="enter_updates_time_value">Updates delay in seconds</string>
+    <string name="accuracy_settings">Accuracy Settings</string>
+    <string name="gps_updates_delay_name">GPS Updates Delay</string>
+    <string name="gps_updates_delay">GPS Updates delay: %1$s sec.</string>
+    <string name="route_settings">Route Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="mock_locations">Mock Locations</string>
+    <string name="where_to">Where to?</string>
+    <string name="from">From: %1$s</string>
+    <string name="copyright">© OpenStreetMap contributors</string>
+    <string name="wikimedia_contributors">| Wikimedia Maps</string>
+    <string name="origin">Origin</string>
+    <string name="destination">Destination</string>
+    <string name="mock_loc_is_disabled">Mock Locations is disabled in settings.</string>
+    <string name="select_on_map">Select on Map</string>
+    <string name="search_name">Search</string>
+    <string name="about_of_the_app">About the app</string>
+    <string name="brake_at_turning">Brake at turning</string>
+    <string name="give_mock_lock_permission">Listick Fake GPS for spoof you location requires Mock Location permission, please grant the permission in Developer Settings</string>
+    <string name="find_and_select_app">Find item Mock Location, click him, after select Listick Fake GPS open this app again.</string>
+    <string name="speed">Speed</string>
+    <string name="difference">Difference</string>
+    <string name="version">Version</string>
+    <string name="last_update">Last Update</string>
+    <string name="last_update_date">10.2021</string>
+    <string name="listick_description">Listick Fake GPS is app for spoofing you current locations with routing feature.</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="building_route">Please wait. Building Route...</string>
+    <string name="failed_to_define_address">Failed to define address</string>
+    <string name="kiloabbr">kph</string>
+    <string name="milesabbr">mph</string>
+    <string name="meterabbr">m/s</string>
+    <string name="location">Location</string>
+    <string name="location_perm_description">For define you current location</string>
+    <string name="storage">Storage</string>
+    <string name="for_caching_map_tiles">For caching map tiles</string>
+    <string-array name="unitList">
+        <item>Meters</item>
+        <item>Kilometers</item>
+        <item>Miles</item>
+    </string-array>
+    <string-array name="trafficSide">
+        <item>Right-hand traffic</item>
+        <item>Left-hand traffic</item>
+    </string-array>
+    <string name="where_from">Where from?</string>
+    <string name="information">Information</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="error_grant_su_permission">Error superuser access.</string>
+    <string name="make_system_app">Make system app</string>
+    <string name="make_non_system_app">Make non-system app</string>
+    <string name="okay">OK</string>
+    <string name="experemental_feature">Experemental Feature!</string>
+    <string name="system_mover_description">This feature is experemental and might error (Root needed)</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="go_to_confirm_text">Do you really want to start location spoofing?</string>
+    <string name="open_video">Watch the video</string>
+    <string name="open_settings">Open the settings</string>
+    <string name="back">Back</string>
+    <string name="developer_options_disabled">Developer options is disabled!</string>
+    <string name="developer_options_instruction">1) Go to Settings<![CDATA[<br>]]>2) Find "About Phone" click<![CDATA[<br>]]>3) Find and tap 7 times on item "Build Number"<![CDATA[<br>]]>4) Return general menu of settings and click "Developer Options"<![CDATA[<br>]]>5) Find item "Mock Locations" or "Simulate Locations"<![CDATA[<br>]]>6) Tap, and select Listick Fake GPS.</string>
+    <string name="developer_options_instruction_miui">1) Go to Settings<![CDATA[<br>]]>2) Find "About Phone" click<![CDATA[<br>]]>3) Find and tap 7 times on item "Build Number"<![CDATA[<br>]]>4) Return general menu of settings and click "Developer Options"<![CDATA[<br>]]>5) Find item "Mock Locations"<![CDATA[<br>]]>6) Tap, and select Listick Fake GPS.</string>
+    <string name="miui_developer_instruction_link">https://www.youtube.com/watch?v=bjntq8-72hw</string>
+    <string name="aosp_developer_instruction_link">https://www.youtube.com/watch?v=uMjyb3wf1Lw</string>
+    <string name="oneui_developer_instruction_link">https://www.youtube.com/watch?v=gKLB_A8HBNI</string>
+    <string name="error_dest_loc">Could not to fetch destination address</string>
+    <string name="switch_dark_theme">Switch on dark theme</string>
+    <string name="switch_light_theme">Switch on light theme</string>
+    <string name="error">Error</string>
+    <string name="stop">Stop</string>
+    <string name="search_locked_description">You have one built route or activated static mode, you can stop and start spoofing again</string>
+    <string name="you_dont_select_dest">You have not chosen destination</string>
+    <string name="please_select_dest">Please specify destination</string>
+    <string name="menu">Menu</string>
+    <string name="keep_center_of_current_location">Center the map in the current coordinates</string>
+    <string name="origin_text">Where from: </string>
+    <string name="where_to_text">Where to: </string>
+    <string name="old_app_version">You have an old application version installed. Get the latest features and improvements, just updated Listick Fake GPS in Google Play.</string>
+    <string name="updates">Updates</string>
+    <string name="push_notification_name">App news</string>
+    <string name="mocking_notification_control">Status control</string>
+    <string name="notify_status_description">Running in background</string>
+    <string name="pause">Pause</string>
+    <string name="settings_route_active_error">Firstly please complete the active route</string>
+    <string name="doubletap_to_exit">Please click BACK again to exit</string>
+    <string name="dont_enable_ml">Don\'t enable mock location</string>
+    <string name="mock_location_activated">Mock location activated!</string>
+    <string name="warning">Warning</string>
+    <string name="difference_error">Difference (±) can\'t be bigger or equal to speed</string>
+    <string name="joystick">Joystick</string>
+    <string name="draw_overlays_permission">Overlays</string>
+    <string name="draw_overlays_summary">For joystick to work required draw overlays permission. Please grant this permissions in opened window, after clicked button "Grant"</string>
+    <string name="grant">Grant</string>
+    <string name="joystick_mode">Joystick Mode</string>
+    <string name="from_current_loc">From my current location</string>
+    <string name="where_from_spoof">Where do you want to start the spoofing:</string>
+    <string name="start_joystick">Start Joystick</string>
+    <string name="stop_joystick">Close Joystick</string>
+    <string name="select_start_point">Select start point!</string>
+    <string name="firstly_close_joystick">Firstly please close active joystick!</string>
+    <string name="joystick_max_speed">Select joystick max speed:</string>
+    <string name="failed_get_currentloc">Failed to get you current location!</string>
+    <string name="joystick_stop_mocking">To use the joystick, stop the location spoofing!</string>
+    <string name="joystick_enabled_error">To start the spoofing, first stop the joystick mode!</string>
+    <string name="joystick_enabled">Joystick Mode!</string>
+    <string name="enter_address">Enter address!</string>
+    <string name="dev_settings_error">Failed to open developer settings. You can open it manually!</string>
+    <string name="location_deviation">Location deviation</string>
+    <string name="notification_status_control">Spoofing status</string>
+    <string name="go_to_coordinates">Go to coodinates</string>
+    <string name="enter_coodinates">Enter coordinates</string>
+    <string-array name="map_tiles">
+        <item>Default (Powered by OSM)</item>
+        <item>WikiMedia</item>
+    </string-array>
+    <string name="share">Share</string>
+    <string name="boookmarks">Bookmarks</string>
+    <string name="add_in_boookmarks">Add in bookmarks</string>
+    <string name="static_spoof">Fixed</string>
+    <string name="route_spoof">Route</string>
+    <string name="bookmark_label">Label:</string>
+    <string name="before_run_spoofing">Firstly run spoofing</string>
+    <string name="where_from_info">"Where from: "</string>
+    <string name="start">Start</string>
+    <string name="address">Address</string>
+    <string name="remove">Delete</string>
+    <string name="could_not_get_location">Couldn\'t get location. Please check is location services enabled.</string>
+    <string name="failed_to_build_route">Error! Failed to build route from roads</string>
+    <string name="rate_app">Rate app!</string>
+    <string name="empty_field_error">Error! The field cannot be empty</string>
+    <string name="altitude">Altitude</string>
+    <string name="auto_altitude_detection">Auto altitude detection</string>
+    <string name="detecting_altitude">Detecting altitude...</string>
+    <string name="altitude_detection_failed">Failed to detect altitude!</string>
+    <string name="altitude_determined">Altitude successfully determined!</string>
+    <string name="nothing_to_view">There\'s nothing here!</string>
+    <string name="spoofing">Spoofing</string>
+    <string name="closed_route">Closed route!</string>
+    <string name="restore_to_real_location">Restore location</string>
+    <string name="restore_to_real_location_confirm">Do you really want to restore location to real? (this may take some time)</string>
+    <string name="joystick_altitude_warn">Altitude spoofing temporarily unavailable!</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="enter_valid_time">Enter valid time!</string>
+    <string name="parking_time">Parking time at the starting point</string>
+    <string name="enter_parking_time">Enter parking time at the starting point!</string>
+    <string name="parking_time_label">Parking at the starting point:</string>
+    <string name="m_abbr">M</string>
+    <string name="s_abbr">S</string>
+    <string name="auto">Auto</string>
+    <string name="route_built">Route built</string>
+    <string name="altitude_above_sea_level">Altitude above sea level:</string>
+    <string name="enter_addr_or_coordinates">Enter address or coordinates:</string>
+    <string name="add_more_route">Add more route?</string>
+    <string name="please_enable_location_services">Location services are disabled</string>
+
+</resources>

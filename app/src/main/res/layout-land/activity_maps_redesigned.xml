@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/maps_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/search_include"/>
+
+        <include
+            android:id="@+id/speed_fragment"
+            layout="@layout/speed_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="30dp"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/search_include"
+            layout="@layout/search_container" />
+
+        <RelativeLayout
+            android:id="@+id/getlocation_container"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="108dp"
+            android:background="@drawable/circle_corner"
+            android:elevation="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/get_location"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:rotation="30"
+                android:src="@drawable/ic_navigation_black_24dp" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/remove_route_view"
+            layout="@layout/delete_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/done_container"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/done_container"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@id/stop_container"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle_corner"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/done"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/ic_done" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/joystick_mode_message"
+            layout="@layout/joystick_message"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/stop_container"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@id/getlocation_container"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:background="@drawable/circle_corner"
+            android:elevation="10dp">
+
+
+            <ImageView
+                android:id="@+id/stop_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/ic_stop" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/pause_container"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@id/edit_container"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle_corner"
+            android:elevation="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/pause"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/ic_pause" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit_container"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_above="@id/stop_container"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle_corner"
+            android:elevation="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:hapticFeedbackEnabled="true"
+                android:src="@drawable/ic_edit_24dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:drawableStart="@drawable/ic_menu"
+            android:text="Parameters"
+            android:gravity="center"
+            android:layout_below="@id/search_include"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/route_building_fullscreen_dialog" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

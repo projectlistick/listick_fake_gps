@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_corner_square">
+
+        <RelativeLayout
+            android:id="@+id/where_to_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/address_shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="38dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="2dp">
+
+                <TextView
+                    android:id="@+id/firstAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/from"
+                    android:textColor="@color/uicolor_text_medium"
+                    android:textSize="12sp" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <ImageView
+                android:id="@+id/icon_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_shimmer"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                android:id="@+id/where_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/address_shimmer"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@id/icon_search"
+                android:maxLines="1"
+                android:text="@string/where_to"
+                android:textColor="@color/uicolor_text_high"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/add_more_points"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/where_to_container"
+            android:visibility="gone"
+            android:background="@drawable/add_more_points">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/add_more_route" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/please_enable_location_services"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@id/add_more_points"
+            android:background="@drawable/location_services_disabled_warning"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:drawableStart="@drawable/ic_location_warning"
+                android:gravity="center"
+                android:text="@string/please_enable_location_services"
+                android:textColor="@color/uicolor_inverted" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

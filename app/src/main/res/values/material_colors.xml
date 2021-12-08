@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- Material Bleu Colors-->
+  <color name="material_blue_500">#2196F3</color>
+  <color name="material_blue_300">#64B5F6</color>
+  <color name="material_blue_200">#90CAF9</color>
+  <color name="material_blue_100">#BBDEFB</color>
+
+  <!-- Material Gray Colors-->
+  <color name="material_gray_50">#FAFAFA</color>
+  <color name="material_gray_100">#f5f5f5</color>
+  <color name="material_gray_500">#9E9E9E</color>
+  <color name="material_gray_900">#212121</color>
+
+  <color name="material_red_200">#EF9A9A</color>
+  <color name="material_red_900">#B00020</color>
+
+  <color name="material_green_900">#1b5e20</color>
+  <color name="material_green_600">#43A047</color>
+  <color name="material_green_800">#2e7d32</color>
+  <color name="material_green_200">#a5d6a7</color>
+</resources>

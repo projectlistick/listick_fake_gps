@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".UI.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_header_height"
+        android:background="@color/activity_header">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/back"
+                android:textColor="@color/uicolor_text_medium" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/settings"
+            android:textColor="@color/uicolor_text_high"
+            android:textSize="36dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/already_spoofing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_info_outline_red"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="@string/settings_route_active_error"
+            android:textColor="@color/error"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/brake_at_turning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/already_spoofing"
+            android:layout_marginTop="2dp"
+            android:buttonTint="@color/uicolor"
+            android:text="@string/brake_at_turning"
+            android:textColor="@color/uicolor_text_medium" />
+
+        <CheckBox
+            android:id="@+id/location_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brake_at_turning"
+            android:buttonTint="@color/uicolor"
+            android:text="@string/location_deviation"
+            android:textColor="@color/uicolor_text_medium" />
+
+        <CheckBox
+            android:id="@+id/current_location_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location_error"
+            android:buttonTint="@color/uicolor"
+            android:text="@string/keep_center_of_current_location"
+            android:textColor="@color/uicolor_text_medium" />
+
+        <CheckBox
+            android:id="@+id/auto_altitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_location_center"
+            android:buttonTint="@color/uicolor"
+            android:text="@string/auto_altitude_detection"
+            android:textColor="@color/uicolor_text_medium" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/materialborder_layout">
+
+        <RelativeLayout
+            android:id="@+id/unit_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/material_ripple">
+
+            <ImageView
+                android:id="@+id/ruler_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:src="@drawable/ic_ruler" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/unitSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ruler_ic"
+                android:background="@android:color/transparent"
+                android:entries="@array/unitList"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_tiles_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unit_container"
+            android:foreground="@drawable/material_ripple">
+
+            <ImageView
+                android:id="@+id/ic_map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:src="@drawable/ic_map_black_24dp" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/map_tiles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ic_map"
+                android:background="@android:color/transparent"
+                android:entries="@array/map_tiles"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/trafficSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map_tiles_container"
+            android:foreground="@drawable/material_ripple">
+
+            <ImageView
+                android:id="@+id/ic_road"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:src="@drawable/ic_baseline_road" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/trafficSideSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/ic_road"
+                android:background="@android:color/transparent"
+                android:entries="@array/trafficSide"
+                android:gravity="center"
+                android:paddingStart="0dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:spinnerMode="dialog" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/settings_of_accuracy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trafficSide"
+            android:drawableStart="@drawable/ic_gps_accuracy"
+            android:drawablePadding="10dp"
+            android:foreground="@drawable/material_ripple"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/settings_of_accuracy"
+            android:textColor="@color/uicolor_text_medium" />
+
+
+        <TextView
+            android:id="@+id/gps_updates_delay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/settings_of_accuracy"
+            android:drawableStart="@drawable/ic_near_me"
+            android:drawablePadding="10dp"
+            android:foreground="@drawable/material_ripple"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/gps_updates_delay"
+            android:textColor="@color/uicolor_text_medium" />
+
+        <TextView
+            android:id="@+id/system_app_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gps_updates_delay"
+            android:drawableStart="@drawable/ic_system_update"
+            android:drawablePadding="10dp"
+            android:foreground="@drawable/material_ripple"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/make_system_app"
+            android:textColor="@color/uicolor_text_medium" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/system_app_toggle"
+            android:drawableStart="@drawable/ic_info_outline"
+            android:drawablePadding="10dp"
+            android:foreground="@drawable/material_ripple"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/about_of_the_app"
+            android:textColor="@color/uicolor_text_medium" />
+
+    </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

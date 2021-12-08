@@ -1,0 +1,8 @@
+<resources>
+
+    <style name="transparent_bars" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+</resources>

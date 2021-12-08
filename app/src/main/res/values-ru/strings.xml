@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">Listick Fake GPS</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="settings">Настройки</string>
+    <string name="continue_text">Продолжить</string>
+    <string name="permissions">Разрешения</string>
+    <string name="need_permissions">Для продолжения работы предоставьте следующие разрешения: </string>
+    <string name="error_get_currentloc">Не удалось получить текущее местоположение.</string>
+    <string name="mock_location_permission">Фиктивные Местоположения</string>
+    <string name="open_developer_settings">Включить Фиктивные местоположения</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="unknown">Неизвестно</string>
+    <string name="search_by_coordinates">Поиск по координатам</string>
+    <string name="Address">Адрес:</string>
+    <string name="enter_value">Введите значение!</string>
+    <string name="settings_of_accuracy">Точность: ±%1$s</string>
+    <string name="enter_accuracy_value">Точность будет варьироваться.</string>
+    <string name="enter_updates_time_value">Разница времени в секундах.</string>
+    <string name="accuracy_settings">Точность</string>
+    <string name="gps_updates_delay_name">Задержка обновления</string>
+    <string name="gps_updates_delay">Задержка обновления: %1$s сек.</string>
+    <string name="route_settings">Маршрут</string>
+    <string name="cancel">Отмена</string>
+    <string name="mock_locations">Фиктивные местоположения</string>
+    <string name="where_to">Куда?</string>
+    <string name="from">От: %1$s</string>
+    <string name="copyright">© Участники OpenStreetMaps</string>
+    <string name="wikimedia_contributors">| Wikimedia Maps</string>
+    <string name="origin">Откуда</string>
+    <string name="destination">Куда</string>
+    <string name="mock_loc_is_disabled">Фиктивные местоположения отключены в настройках.</string>
+    <string name="select_on_map">Указать на карте</string>
+    <string name="search_name">Поиск</string>
+    <string name="about_of_the_app">О приложении</string>
+    <string name="brake_at_turning">Тормозить перед поворотами</string>
+    <string name="give_mock_lock_permission">Для подмены координат, пожалуйста предоставьте разрешение Фиктивные Местоположения в настройках разработчика.</string>
+    <string name="find_and_select_app">Найдите пункт Фиктивные Местоположения нажмите, и выберите Listick Fake GPS.</string>
+    <string name="speed">Скорость</string>
+    <string name="difference">Разность</string>
+    <string name="version">Версия</string>
+    <string name="last_update">Последнее обновление</string>
+    <string name="listick_description">Подмена Ваших координат с возможностью построения маршрутов.</string>
+    <string name="no_internet">Отсувствует соединение с интернетом</string>
+    <string name="building_route">Пожалуйста подождите. Построение маршрута…</string>
+    <string name="failed_to_define_address">Не удалось определить адрес.</string>
+    <string name="kiloabbr">км/ч</string>
+    <string name="milesabbr">миль/ч</string>
+    <string name="meterabbr">м/с</string>
+    <string name="location">Местоположение</string>
+    <string name="location_perm_description">Для определения Вашего местоположения.</string>
+    <string name="storage">Память</string>
+    <string name="for_caching_map_tiles">Для кэширования данных</string>
+    <string-array name="unitList">
+        <item>Метры</item>
+        <item>Километры</item>
+        <item>Мили</item>
+    </string-array>
+    <string name="where_from">Откуда?</string>
+    <string name="information">Информация</string>
+    <string name="please_wait">Пожалуйста подождите...</string>
+    <string name="error_grant_su_permission">Ошибка получения прав суперпользователя.</string>
+    <string name="make_system_app">Сделать системным приложением</string>
+    <string name="make_non_system_app">Сделать пользовательским.</string>
+    <string name="okay">OK</string>
+    <string name="experemental_feature">Эксперементальная функция!</string>
+    <string name="system_mover_description">Эта функция является экспериментальной и может привести к ошибке (Требуются права суперпользователя)</string>
+    <string name="confirmation">Подтверждение</string>
+    <string name="go_to_confirm_text">Вы действительно хотите начать подмену местоположения?</string>
+    <string name="open_video">Посмотреть видео</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="back">Назад</string>
+    <string name="developer_options_disabled">Функции разработчика отключены!</string>
+    <string name="developer_options_instruction">1) Перейдите в настройки<![CDATA[<br>]]>2) Найдите пункт "О телефоне"<![CDATA[<br>]]>3) Найдите пунт "Номер сборки" и нажмите 7 раз<![CDATA[<br>]]>4) Вернитесь в основное окно настроек и найдите пункт "Для разработчиков"<![CDATA[<br>]]>5) Найдите пункт "Фиктивные местоположения" или "Симуляция местоположения"<![CDATA[<br>]]>6) Нажмите и выберите Listick Fake GPS.</string>
+    <string name="developer_options_instruction_miui">1) Перейдите в настройки<![CDATA[<br>]]>2) Найдите пункт "О телефоне"<![CDATA[<br>]]>3) Найдите пунт "Версия MIUI" и нажмите 5-7 раз<![CDATA[<br>]]>4) Вернитесь в основное окно настроек и найдите пункт "Для разработчиков"<![CDATA[<br>]]>5) Найдите пункт "Фиктивные местоположения"<![CDATA[<br>]]>6) Нажмите и выберите Listick Fake GPS.</string>
+    <string name="miui_developer_instruction_link">https://www.youtube.com/watch?v=WjH6Y3oXrRY</string>
+    <string name="aosp_developer_instruction_link">https://www.youtube.com/watch?v=XvIodXALSYg</string>
+    <string name="oneui_developer_instruction_link">https://www.youtube.com/watch?v=cLGgmAVzu8I</string>
+    <string name="error_dest_loc">Ошибка получения адреса места назначения.</string>
+    <string name="switch_dark_theme">Включить темную тему</string>
+    <string name="switch_light_theme">Включить светлую тему</string>
+    <string name="error">Предупреждение</string>
+    <string name="you_dont_select_dest">Вы не указали пункт назначения!</string>
+    <string name="please_select_dest">Пожалуйста укажите пункт назначения</string>
+    <string name="stop">Остановить</string>
+    <string name="search_locked_description">У Вас уже построен или активирован статический режим, остановите текущие операции для перехода в поиск.</string>
+    <string name="menu">Меню</string>
+    <string name="keep_center_of_current_location">Центрировать карту на текущие координаты</string>
+    <string name="origin_text">Откуда: </string>
+    <string name="where_to_text">Куда: </string>
+    <string name="old_app_version">У вас установлена старая версия приложения. Получите новые функции и исправления, для этого просто перейдите в Google Play и обновите Listick Fake GPS.</string>
+    <string name="updates">Обновления</string>
+    <string name="push_notification_name">Новости приложения</string>
+    <string name="mocking_notification_control">Управление статусом</string>
+    <string name="notify_status_description">Идет подмена по маршруту</string>
+    <string name="pause">Пауза</string>
+    <string name="settings_route_active_error">Сначала завершите активный маршрут</string>
+    <string name="doubletap_to_exit">Нажмите еще раз чтобы выйти</string>
+    <string name="dont_enable_ml">Не включать фиктивные местоположения</string>
+    <string name="mock_location_activated">Фиктивные местоположения включены!</string>
+    <string name="warning">Предупреждение</string>
+    <string name="difference_error">Разность (±) не может быть больше или равна скорости</string>
+    <string name="joystick">Джойстик</string>
+    <string name="draw_overlays_permission">Наложения</string>
+    <string name="draw_overlays_summary">Для работы джойстика необходимо разрешение, для отрисовки наложений на экране. Пожалуйста предоставьте разрешение в открывшемся окне, после нажатия на кнопку "Предоставить"</string>
+    <string name="grant">Предоставить</string>
+    <string name="joystick_mode">Joystick Mode</string>
+    <string name="from_current_loc">С моего текущего местоположения</string>
+    <string name="where_from_spoof">Откуда вы хотите начать подмену:</string>
+    <string name="start_joystick">Запустить джойстик</string>
+    <string name="stop_joystick">Закрыть джойстик</string>
+    <string name="select_start_point">Выберите стартовую точку!</string>
+    <string name="firstly_close_joystick">Сначала закройте джойстик!</string>
+    <string name="joystick_max_speed">Укажите максимальную скорость для джойстика:</string>
+    <string name="failed_get_currentloc">Не удается определить текущее Ваше местоположение!</string>
+    <string name="joystick_stop_mocking">Для использования джойстика остановите подмену местоположения!</string>
+    <string name="joystick_enabled_error">Для начала подмены сначала остановите режим джойстика!</string>
+    <string name="joystick_enabled">Режим джойстика!</string>
+    <string name="enter_address">Укажите адрес!</string>
+    <string name="dev_settings_error">Не удалось открыть настройки разработчика. Вы можете открыть их вручную!</string>
+    <string name="location_deviation">Отклонение от местоположения</string>
+    <string name="notification_status_control">Управление статусом подмены</string>
+    <string name="go_to_coordinates">Перейти по координатам</string>
+    <string name="enter_coodinates">Введите координаты</string>
+    <string-array name="map_tiles">
+        <item>Стандарт (OSM)</item>
+        <item>WikiMedia</item>
+    </string-array>
+    <string-array name="trafficSide">
+        <item>Правостороннее движение</item>
+        <item>Левостороннее движение</item>
+    </string-array>
+    <string name="share">Поделиться</string>
+    <string name="boookmarks">Закладки</string>
+    <string name="add_in_boookmarks">Добавить в закладки</string>
+    <string name="static_spoof">Фиксированный</string>
+    <string name="route_spoof">Маршрут</string>
+    <string name="bookmark_label">Название:</string>
+    <string name="where_from_info">Откуда</string>
+    <string name="start">Начать</string>
+    <string name="address">Адрес:</string>
+    <string name="remove">Удалить</string>
+    <string name="could_not_get_location">Не удалось получить местоположение. Проверьте, включены ли сервисы опередления местоположения.</string>
+    <string name="failed_to_build_route">Ошибка! Не удалось построить маршрут по дорогам</string>
+    <string name="rate_app">Оценить приложение!</string>
+    <string name="empty_field_error">Ошибка! Поле не может быть пустым</string>
+    <string name="auto_altitude_detection">Автоопределение высоты</string>
+    <string name="altitude">Высота</string>
+    <string name="detecting_altitude">Определяем высоту...</string>
+    <string name="altitude_detection_failed">Не удалось определить высоту!</string>
+    <string name="altitude_determined">Высота определена успешно!</string>
+    <string name="nothing_to_view">Здесь ничего нет!</string>
+    <string name="spoofing">Подмена</string>
+    <string name="closed_route">Замкнутый маршрут!</string>
+    <string name="restore_to_real_location">Возврат местоположения</string>
+    <string name="restore_to_real_location_confirm">Вы действительно хотите вернуть местоположение телефона в реальное? (это может занять некоторое время)</string>
+    <string name="joystick_altitude_warn">Подмена высоты временно не доступна!</string>
+    <string name="minutes">Минут</string>
+    <string name="seconds">Секунд</string>
+    <string name="parking_time_label">Стоянка на начальной точке:</string>
+    <string name="m_abbr">мин.</string>
+    <string name="s_abbr">сек.</string>
+    <string name="auto">Авто</string>
+    <string name="route_built">Маршрут построен</string>
+    <string name="altitude_above_sea_level">Высота над уровнем моря:</string>
+    <string name="enter_addr_or_coordinates">Введите адрес/координаты:</string>
+    <string name="add_more_route">Добавить еще точку?</string>
+    <string name="please_enable_location_services">Службы геолокации отключены</string>
+
+</resources>

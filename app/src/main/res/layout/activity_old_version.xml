@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/header_update" />
+
+    <TextView
+        android:id="@+id/header_updates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/updates"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/uicolor_text_high"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_updates"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/old_app_version"
+        android:textColor="@color/uicolor_text_medium"
+        android:textSize="16sp" />
+
+    <android.widget.Button
+        android:id="@+id/open_gp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/istyle_corner_button"
+        android:stateListAnimator="@null"
+        android:text="@string/continue_text"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_ui_text" />
+
+</RelativeLayout>

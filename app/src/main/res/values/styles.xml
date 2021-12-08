@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="LightTheme">
+        <item name="android:statusBarColor">@color/material_statusbar</item>
+        <item name="android:navigationBarColor">@color/material_statusbar</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="LightTheme" parent="Theme.Material3.Light">
+        <item name="colorPrimary">@color/material_gray_900</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/material_gray_900</item>
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+    <style name="ClearBars" parent="AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/material_statusbar</item>
+        <item name="android:navigationBarColor">@color/material_statusbar</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#E0E0E0</item>
+    </style>
+
+    <style name="blue_button">
+        <item name="android:background">@color/blue_ui_color</item>
+        <item name="android:color">@color/blue_ui_color</item>
+    </style>
+
+    <style name="ClearlyStatusbar" parent="LightTheme">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#fff</item>
+    </style>
+
+    <style name="uisearchview">
+        <item name="android:textColor">@color/uisearch_textcolor</item>
+        <item name="android:textColorHint">@color/uicolor_text_medium</item>
+        <item name="android:background">@drawable/uisearchbar</item>
+        <item name="android:drawableTint" tools:targetApi="m">@color/uisearch_icon_tint</item>
+        <item name="android:paddingStart">@dimen/uisearchbar_horizontal</item>
+        <item name="android:paddingEnd">@dimen/uisearchbar_horizontal</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:drawablePadding">@dimen/uisearch_drawable_padding</item>
+    </style>
+
+
+    <style name="timepicker" parent="uisearchview">
+        <item name="android:background">@drawable/timepicker_layout</item>
+    </style>
+
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="headerTextStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@drawable/branded_screen_theme</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="spinnerStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

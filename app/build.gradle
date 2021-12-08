@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+def appVersion = '2.6.2'
+def mapsVersion = '6.1.11'
+def appVersionCode = 25
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "project.listick.fakegps"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode appVersionCode
+        versionName appVersion
+        multiDexEnabled false
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    def date = new Date().format('yyyyMMddHHmmssSSS');
+                    outputFileName = "${applicationId}_${versionName}-${versionCode}_${date}_minAPI23.apk"
+                }
+            }
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    packagingOptions {
+        exclude 'resources.arsc'
+        exclude 'AndroidManifest.xml'
+    }
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/aidl']
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.google.android.material:material:1.6.0-alpha01'
+    implementation 'com.google.firebase:firebase-core:17.4.3'
+    implementation 'com.google.firebase:firebase-messaging:20.2.1'
+    implementation 'com.google.firebase:firebase-crashlytics:17.1.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation "org.osmdroid:osmdroid-android:${mapsVersion}"
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation files("${rootDir}/syslibs/manager.jar")
+}
