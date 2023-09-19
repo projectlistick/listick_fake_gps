@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/header_img"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_warning" />
+
+    <TextView
+        android:id="@+id/joystick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/date_is_inaccurate"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/uicolor_text_high"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joystick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/date_is_inaccurate_summary"
+        android:textColor="@color/uicolor_text_medium"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/adjust_clock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/istyle_button_above_text"
+        android:backgroundTint="@color/primaryColor"
+        android:stateListAnimator="@null"
+        android:text="@string/adjust_clock"
+        android:textAllCaps="false"
+        android:textColor="@color/blue_ui_text"
+        app:icon="@drawable/ic_settings_24dp" />
+
+</RelativeLayout>

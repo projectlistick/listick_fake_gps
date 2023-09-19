@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_ui"
+    android:padding="4dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/uicolor_text_high" />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/divider" />
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/uicolor_text_medium"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/text_info"
+        style="@style/uisearchview"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@id/text_dialog"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:digits="-0123456789., "
+        android:hint="@string/enter_value"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_info"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_dialog"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/uicolor_text_high"
+            android:textSize="16sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_dialog"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:text="@string/continue_text"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="@color/material_button_text_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+</RelativeLayout>

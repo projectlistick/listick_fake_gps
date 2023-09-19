@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/spoofing_preferences_title">
+
+        <rikka.material.preference.MaterialSwitchPreference
+            android:defaultValue="true"
+            android:key="brake_at_turning"
+            android:summary="@string/brake_at_turning_summary"
+            android:title="@string/brake_at_turning" />
+        <rikka.material.preference.MaterialSwitchPreference
+            android:defaultValue="true"
+            android:key="location_deviation"
+            android:summary="@string/location_deviation_summary"
+            android:title="@string/location_deviation" />
+        <rikka.material.preference.MaterialSwitchPreference
+            android:defaultValue="true"
+            android:icon="@drawable/ic_terrain"
+            android:key="auto_altitude"
+            android:summary="@string/auto_altitude_summary"
+            android:title="@string/auto_altitude_detection" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/measurement_title">
+
+        <rikka.preference.SimpleMenuPreference
+            android:icon="@drawable/ic_ruler"
+            android:key="standart_unit"
+            android:summary="Kilometers"
+            android:title="@string/units_title"
+            android:entries="@array/unitList"
+            android:entryValues="@array/unit_values"/>
+        <rikka.preference.SimpleMenuPreference
+            android:key="default_tile_provider"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:summary="Default (OSM)"
+            android:title="@string/map_tiles_title"
+            android:entries="@array/map_tiles"
+            android:entryValues="@array/map_tiles_value"/>
+        <rikka.preference.SimpleMenuPreference
+            android:icon="@drawable/ic_baseline_road"
+            android:key="traffic_side"
+            android:summary="Right-hand traffic"
+            android:title="@string/traffic_side_title"
+            android:entries="@array/trafficSide"
+            android:entryValues="@array/traffic_values"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/accuracy_title">
+
+        <EditTextPreference
+            android:defaultValue="10"
+            android:digits="0123456789"
+            android:icon="@drawable/ic_gps_accuracy"
+            android:key="accuracy_settings"
+            android:title="@string/settings_of_accuracy"
+            android:summary="10 m."/>
+        <EditTextPreference
+            android:key="gps_updates_delay"
+            android:inputType="number"
+            android:defaultValue="1"
+            android:icon="@drawable/ic_near_me"
+            android:title="@string/gps_updates_delay"
+            android:summary="1 sec."/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

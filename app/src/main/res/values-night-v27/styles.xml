@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="E2ETheme" parent="AppTheme">
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:statusBarColor">@color/app_system_bars</item>
+        <item name="android:navigationBarColor">@color/app_system_bars</item>
+    </style>
+
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/material_header"
+        android:elevation="15dp">
+
+        <RelativeLayout
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/search_bar_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="2dp"
+                android:text="@string/enter_addr_or_coordinates" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_bar_hint"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/search_destination"
+                    style="@style/uisearchview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toStartOf="@id/search"
+                    android:alpha="0.8"
+                    android:drawableStart="@drawable/ic_search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text" />
+
+                <TextView
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/search_name" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/maps_fragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:background="@drawable/search_popup"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/copyright_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomboard_container"
+        android:paddingStart="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/copyright"
+        android:textColor="@color/uicolor_text_medium"
+        android:textSize="@dimen/osm_copyright_text_size" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomboard_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/material_header"
+        android:elevation="15dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:icon="@drawable/ic_arrow_back"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continue_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="8dp"
+            android:layout_weight="0.4"
+            android:text="@string/continue_text" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

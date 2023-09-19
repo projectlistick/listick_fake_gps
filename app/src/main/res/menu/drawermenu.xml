@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settings" android:icon="@drawable/ic_settings_24dp" android:title="@string/settings" />
+    <item android:id="@+id/joystick" android:icon="@drawable/ic_videogame_asset" android:title="@string/joystick" />
+    <item android:id="@+id/share_location" android:icon="@drawable/ic_share_black_24dp" android:title="@string/share" />
+    <!-- <item android:id="@+id/bookmarks" android:icon="@drawable/ic_bookmark_24dp" android:title="@string/boookmarks" /> -->
+    <!-- <item android:id="@+id/add_in_bookmarks" android:icon="@drawable/ic_save_black_24dp" android:title="@string/add_in_boookmarks" /> -->
+    <item android:id="@+id/go_to_coordinates" android:icon="@drawable/ic_keyboard_return_black_24dp" android:title="@string/go_to_coordinates" />
+    <item android:id="@+id/our_telegram" android:icon="@drawable/ic_telegram_24dp" android:title="@string/our_telegram" />
+    <item android:id="@+id/rate_app" android:icon="@drawable/ic_star_black_24dp" android:title="@string/rate_app" />
+    <item android:id="@+id/about" android:icon="@drawable/ic_info_outline" android:title="@string/about_of_the_app" />
+</menu>

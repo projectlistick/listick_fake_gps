@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_background"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    android:paddingBottom="15dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" >
+
+    <RelativeLayout
+        android:id="@+id/search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_margin="8dp"
+            android:id="@+id/drag"
+            android:layout_height="5dp"
+            android:layout_width="32dp"
+            style="@style/uisearchview"
+            android:layout_centerHorizontal="true"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/address_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:layout_below="@id/drag">
+
+            <TextView
+                android:id="@+id/firstAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="@string/from"
+                android:textColor="@color/uicolor_text_medium"
+                android:textSize="12sp" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:id="@+id/where_to"
+            style="@style/uisearchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_shimmer"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:drawableStart="@drawable/ic_route"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:padding="8dp"
+            android:paddingStart="8dp"
+            android:text="@string/where_to"
+            android:textColor="@color/uicolor_text_high"
+            android:textSize="18sp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/add_more_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/where_to"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:visibility="gone"
+            android:backgroundTint="@color/cardview_infobar"
+            style="@style/Widget.Material3.Button.TonalButton"
+            app:icon="@drawable/ic_baseline_add_location_alt_24"
+            app:iconGravity="textStart"
+            android:textColor="@color/uicolor"
+            android:text="@string/add_more_route"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/please_enable_location_services"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_more_points"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="@color/red_tonal_button"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/please_enable_location_services"
+            android:visibility="visible"
+            app:icon="@drawable/ic_location_warning"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_spoofing"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/please_enable_location_services"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/start_spoofing"
+            android:gravity="center"
+            android:lines="1"
+            android:text="@string/start_spoofing"
+            android:visibility="visible"
+            app:icon="@drawable/ic_done"
+            app:iconGravity="textStart" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop_button"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/please_enable_location_services"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="8dp"
+            android:lines="1"
+            android:backgroundTint="@color/stop_btn_color"
+            android:gravity="center"
+            android:text="@string/stop"
+            android:visibility="gone"
+            app:icon="@drawable/ic_stop"
+            app:iconGravity="textStart" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/remote_route"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/please_enable_location_services"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/start_spoofing"
+            android:backgroundTint="@color/red_tonal_button"
+            android:gravity="center"
+            android:text="@string/remote_route"
+            android:maxLines="1"
+            android:visibility="gone"
+            app:icon="@drawable/ic_delete"
+            app:iconGravity="textStart" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/pause_button"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/please_enable_location_services"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/stop_button"
+            android:backgroundTint="@color/stop_tonal_button"
+            android:gravity="center"
+            android:text="@string/pause"
+            android:visibility="gone"
+            android:lines="1"
+            app:icon="@drawable/ic_pause"
+            android:textColor="@color/uicolor_inverted"
+            app:iconTint="@color/uicolor_inverted"
+            app:iconGravity="textStart" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/edit_button"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/please_enable_location_services"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/stop_button"
+            android:backgroundTint="@color/stop_tonal_button"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:layout_marginEnd="4dp"
+            android:lines="1"
+            android:visibility="gone"
+            app:icon="@drawable/ic_edit_24dp"
+            app:iconGravity="textStart"
+            android:textColor="@color/uicolor_inverted"
+            app:iconTint="@color/uicolor_inverted" />
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/restore_location_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:icon="@drawable/ic_baseline_restore_24"
+        android:text="@string/restore_to_real_location"
+        android:backgroundTint="@color/cardview_infobar"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="@color/uicolor_text_high"
+        android:lines="1"
+        app:iconTint="@color/uicolor_text_high"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/active_route_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/cardview_infobar"
+        app:cardCornerRadius="16dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/speedometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableStart="@drawable/speedometer"
+                android:drawablePadding="5dp"
+                android:padding="@dimen/speed_margin"
+                android:text="0 kph"
+                android:textColor="@color/uicolor_text_high"
+                android:textSize="@dimen/speed_text_size" />
+
+            <TextView
+                android:id="@+id/distance_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/speedometer"
+                android:layout_gravity="center"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:drawableStart="@drawable/ic_baseline_road"
+                android:drawablePadding="5dp"
+                android:padding="@dimen/speed_margin"
+                android:text="0/0"
+                android:textColor="@color/uicolor_text_high"
+                android:textSize="@dimen/speed_text_size" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

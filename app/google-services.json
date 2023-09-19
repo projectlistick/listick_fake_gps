@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "587032778142",
+    "firebase_url": "https://listickfakegps.firebaseio.com",
+    "project_id": "listickfakegps",
+    "storage_bucket": "listickfakegps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587032778142:android:26ec7c06575aab1689728f",
+        "android_client_info": {
+          "package_name": "project.listick.fakegps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "587032778142-gnp4qjfd6fdeilcsagbc0at0qrndk4oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "project.listick.fakegps",
+            "certificate_hash": "071a87c13c4bff710db3dd788a2cc0ffdafab6ed"
+          }
+        },
+        {
+          "client_id": "587032778142-6s7869nthh6rb5kppf3me37gfg8r2tn1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUR4rBuI-090aU3lGX9tduybl4nwM4f7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "587032778142-6s7869nthh6rb5kppf3me37gfg8r2tn1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

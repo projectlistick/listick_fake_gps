@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Listick Fake GPS</string>
+    <string name="settings">Opțiuni</string>
+    <string name="continue_text">Continuați</string>
+    <string name="permissions">Permisiuni</string>
+    <string name="need_permissions">Pentru a continua oferiți următoarele permesiuni: </string>
+    <string name="error_get_currentloc">Nu s-a putut obține locația actuală</string>
+    <string name="mock_location_permission">Locație fictivă</string>
+    <string name="open_developer_settings">Activați locații fictive</string>
+    <string name="unknown_error">Eroare necunoscută</string>
+    <string name="unknown">Necunoscut</string>
+    <string name="search_by_coordinates">Căutare după coordonate</string>
+    <string name="Address">Adresa:</string>
+    <string name="enter_value">Introdu valoarea!</string>
+    <string name="settings_of_accuracy">Precizie</string>
+    <string name="enter_accuracy_value">Precizia va varia</string>
+    <string name="enter_updates_time_value">Diferența de timp în secunde</string>
+    <string name="accuracy_settings">Precizie</string>
+    <string name="gps_updates_delay_name">Întârziere reîmprospătare</string>
+    <string name="gps_updates_delay">Întârziere reîmprospătare</string>
+    <string name="route_settings">Traseu</string>
+    <string name="cancel">Anulare</string>
+    <string name="mock_locations">Locații fictive</string>
+    <string name="where_to">Unde?</string>
+    <string name="from">Din: %1$s</string>
+    <string name="copyright">© Membrii OpenStreetMaps</string>
+    <string name="wikimedia_contributors">| Wikimedia Maps</string>
+    <string name="origin">Unde?</string>
+    <string name="destination">Din:</string>
+    <string name="mock_loc_is_disabled">Locațiile fictive sunt dezactivate în setări.</string>
+    <string name="select_on_map">Specificați pe hartă</string>
+    <string name="search_name">Căutare</string>
+    <string name="about_of_the_app">Despre aplicație</string>
+    <string name="brake_at_turning">Frânează înainte de viraj</string>
+    <string name="give_mock_lock_permission">Locații simulate în opțiunile pentru dezvoltatori.</string>
+    <string name="find_and_select_app">Găsiți locații fictive faceți clic și selectați Listick Fake GPS.</string>
+    <string name="speed">Viteză</string>
+    <string name="difference">Diferență</string>
+    <string name="version">Versiune</string>
+    <string name="no_internet">Fără conexiune cu internet</string>
+    <string name="building_route">Te rog așteapta. Construirea unui traseu...</string>
+    <string name="failed_to_define_address">Nu s-a putut stabili adresa.</string>
+    <string name="kiloabbr">km/h</string>
+    <string name="milesabbr">mp/h</string>
+    <string name="meterabbr">m/s</string>
+    <string name="location">Locație</string>
+    <string name="location_perm_description">Pentru a vă determina locația</string>
+    <string-array name="unitList">
+        <item>Metri</item>
+        <item>Kilometri</item>
+        <item>Mile</item>
+    </string-array>
+    <string name="where_from">Unde?</string>
+    <string name="information">Informație</string>
+    <string name="please_wait">Te rog asteapta...</string>
+    <string name="error_grant_su_permission">Eroare la obținerea drepturilor de superutilizator.</string>
+    <string name="okay">OK</string>
+    <string name="confirmation">Confirmare</string>
+    <string name="go_to_confirm_text">Sigur doriți să începeți falsificarea locației?</string>
+    <string name="open_video">Urmăriți videoclipul</string>
+    <string name="open_settings">Deschide setările</string>
+    <string name="back">Înapoi</string>
+    <string name="developer_options_disabled">Funcțiile dezvoltatorului sunt dezactivate!</string>
+    <string name="developer_options_instruction">1) Mergi la Setări<![CDATA[<br>]]>2) Găsiți „Despre telefon”<![CDATA[<br>]]>3) Găsiți „Numărul asamblării” și apăsați de 7 ori<![CDATA[<br>]]>4) Reveniți la fereastra principală de setări și găsiți elementul „Pentru dezvoltatori”<![CDATA[<br>]]>5) Localizați „Locații fictive” sau „Simulare locație”<![CDATA[<br>]]>6) Faceți clic și selectați Listick Fake GPS.</string>
+    <string name="developer_options_instruction_miui">1) Accesați Setări<![CDATA[<br>]]>2) Găsiți „Despre telefon”<![CDATA[<br>]]>3) Găsiți „Versiunea MIUI” și apăsați de 5-7 ori<![CDATA[<br>]]>4)  Reveniți la fereastra principală de setări și găsiți „Opțiuni pentru dezvoltatori”<![CDATA[<br>]]>5) Găsiți „Locații fantomă”<![CDATA[<br>]]>6) Faceți clic și selectați Listick Fake GPS.</string>
+    <string name="miui_developer_instruction_link">https://www.youtube.com/watch?v=WjH6Y3oXrRY</string>
+    <string name="aosp_developer_instruction_link">https://www.youtube.com/watch?v=XvIodXALSYg</string>
+    <string name="oneui_developer_instruction_link">https://www.youtube.com/watch?v=cLGgmAVzu8I</string>
+    <string name="error_dest_loc">Eroare la obținerea adresei de destinație</string>
+    <string name="error">Avertizare</string>
+    <string name="you_dont_select_dest">Nu ai introdus o destinație!</string>
+    <string name="please_select_dest">Vă rugăm să introduceți o destinație</string>
+    <string name="stop">Stop</string>
+    <string name="search_locked_description">Ați construit sau activat deja modul static, opriți operațiunile curente pentru a merge la căutare.</string>
+    <string name="menu">Meniul</string>
+    <string name="keep_center_of_current_location">Centrați harta la coordonatele curente</string>
+    <string name="origin_text">Unde: </string>
+    <string name="where_to_text">Unde: </string>
+    <string name="updates">Actualizări</string>
+    <string name="push_notification_name">Noutăți despre aplicații</string>
+    <string name="mocking_notification_control">Managementul statutului</string>
+    <string name="notify_status_description">Schimbarea rutei în curs</string>
+    <string name="pause">Pauză</string>
+    <string name="settings_route_active_error">Completați mai întâi traseul activ</string>
+    <string name="doubletap_to_exit">Faceți clic din nou pentru a ieși</string>
+    <string name="dont_enable_ml">Nu includeți locații simulate</string>
+    <string name="mock_location_activated">Locații simulate incluse!</string>
+    <string name="warning">Avertizare</string>
+    <string name="difference_error">Diferența (±) nu poate fi mai mare sau egală cu viteza</string>
+    <string name="joystick">Joystick</string>
+    <string name="draw_overlays_permission">Suprapuneri</string>
+    <string name="draw_overlays_summary">Joystick-ul necesită permisiunea pentru a desena suprapuneri pe ecran. Vă rugăm să acordați permisiunea în fereastra care se deschide, după ce faceți clic pe butonul „Acordare”</string>
+    <string name="grant">Furnizați</string>
+    <string name="joystick_mode">Joystick Mode</string>
+    <string name="from_current_loc">Din locația mea actuală</string>
+    <string name="where_from_spoof">De unde doriți să începeți înlocuirea:</string>
+    <string name="start_joystick">Lansați joystick-ul</string>
+    <string name="stop_joystick">Închideți joystick-ul</string>
+    <string name="select_start_point">Alege-ți punctul de plecare!</string>
+    <string name="firstly_close_joystick">Închideți mai întâi joystick-ul!</string>
+    <string name="joystick_max_speed">Specificați viteza maximă pentru joystick:</string>
+    <string name="failed_get_currentloc">Nu se poate determina locația dvs. actuală!</string>
+    <string name="joystick_stop_mocking">Nu mai falsificați pentru a utiliza joystick-ul!</string>
+    <string name="joystick_enabled_error">Pentru a începe înlocuirea, mai întâi opriți modul joystick!</string>
+    <string name="joystick_enabled">Modul joystick!</string>
+    <string name="enter_address">Introdu o adresă!</string>
+    <string name="dev_settings_error">Opțiunile pentru dezvoltatori nu au putut fi deschise. Le poți deschide manual!</string>
+    <string name="location_deviation">Abatere de la locație</string>
+    <string name="notification_status_control">Managementul statutului de înlocuire</string>
+    <string name="go_to_coordinates">Mergi la coordonate</string>
+    <string name="enter_coodinates">Introduceți coordonatele</string>
+    <string-array name="map_tiles">
+        <item>Standard (OSM)</item>
+        <item>WikiMedia</item>
+    </string-array>
+    <string-array name="trafficSide">
+        <item>Trafic pe dreapta</item>
+        <item>Trafic pe partea stânga</item>
+    </string-array>
+    <string name="share">Distribuie locația</string>
+    <string name="boookmarks">Marcaje</string>
+    <string name="add_in_boookmarks">Adăugați la marcaje</string>
+    <string name="static_spoof">Fix</string>
+    <string name="route_spoof">Traseu</string>
+    <string name="bookmark_label">Nume:</string>
+    <string name="where_from_info">Unde</string>
+    <string name="start">Start</string>
+    <string name="address">Adresa:</string>
+    <string name="remove">Șterge</string>
+    <string name="could_not_get_location">Nu s-a putut obține locația. Verificați dacă serviciile de localizare sunt activate.</string>
+    <string name="failed_to_build_route">Eroare! Nu s-a putut construi traseul pe drumuri</string>
+    <string name="rate_app">Evaluează aplicația!</string>
+    <string name="empty_field_error">Eroare! Câmpul nu poate fi gol</string>
+    <string name="auto_altitude_detection">Detectare automată a înălțimii</string>
+    <string name="altitude">Înălţime</string>
+    <string name="detecting_altitude">Se determină înălțimea...</string>
+    <string name="altitude_detection_failed">Nu s-a stabilit înălțimea!</string>
+    <string name="altitude_determined">Înălțimea stabilită cu succes!</string>
+    <string name="nothing_to_view">Nu e nimic aici!</string>
+    <string name="spoofing">Substituţie</string>
+    <string name="closed_route">Traseu închis!</string>
+    <string name="restore_to_real_location">Locația de întoarcere</string>
+    <string name="restore_to_real_location_confirm">Chiar vrei să readuci locația telefonului în cea reală? (Acest lucru poate dura ceva timp)</string>
+    <string name="joystick_altitude_warn">Înlocuirea altitudinii nu este disponibilă temporar!</string>
+    <string name="minutes">Minute</string>
+    <string name="seconds">Secunde</string>
+    <string name="parking_time_label">Parcare la punctul de plecare:</string>
+    <string name="m_abbr">min.</string>
+    <string name="s_abbr">sec.</string>
+    <string name="auto">Auto</string>
+    <string name="route_built">Traseu construit</string>
+    <string name="altitude_above_sea_level">Înălțimea deasupra nivelului mării:</string>
+    <string name="enter_addr_or_coordinates">Introdu adresa/coordonatele:</string>
+    <string name="add_more_route">Mai adaugi un punct?</string>
+    <string name="please_enable_location_services">Serviciile de localizare sunt dezactivate</string>
+    <string name="remote_route">Eliminați ruta</string>
+    <string name="resume">Continua</string>
+    <string name="edit">Editați</string>
+    <string name="start_spoofing">Începeți înlocuirea</string>
+    <string name="about_view_source_code"><![CDATA[Original Alăturați-vă %1$s<br/>Alăturați-vă nostru  %2$s canalului<br/>Vă rugăm să ne ajutați să traducem aplicația. Citiți mai multe pe GitHub]]></string>
+    <string name="location_deviation_summary">Locația se va schimba ușor dacă nu există nicio mișcare</string>
+    <string name="auto_altitude_summary">Schimbarea automată a înălțimii la schimbarea locației</string>
+    <string name="brake_at_turning_summary">Reduceți viteza la întoarcere</string>
+    <string name="spoofing_preferences_title">Opțiuni de înlocuire</string>
+    <string name="measurement_title">Măsurători</string>
+    <string name="accuracy_title">Precizie</string>
+    <string name="enter_valid_value">Vă rugăm să introduceți o valoare validă</string>
+    <string name="units_title">Unități</string>
+    <string name="map_tiles_title">Carduri</string>
+    <string name="traffic_side_title">Partea de trafic</string>
+
+</resources>

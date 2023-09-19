@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/material_blue</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="black">#000000</color>
+    <color name="colorAccent">@color/black</color>
+    <color name="transparently_dark">#A43A3A3A</color>
+    <color name="white">#ffffff</color>
+    <color name="white_pressed">#5cffffff</color>
+    <color name="tooltip_color">#d6e2dede</color>
+    <color name="copyright_accent">#a6ffffff</color>
+    <color name="alpha_blue">#1c074dc9</color>
+    <color name="white_black">#93959b</color>
+    <color name="dark_yellow">#4b4b49</color>
+    <color name="material_blue">#074dc9</color>
+    <color name="material_blue_400">#0581EB</color>
+    <color name="material_blue_700">#1976D2</color>
+    <color name="orm_red">#bb0010</color>
+    <color name="standart_text_color">#757575</color>
+    <color name="warning_orange">#ffd555</color>
+    <color name="dark_primary">#3A3A3A</color>
+    <color name="blue_ui_color">@color/material_blue_200</color>
+    <color name="blue_ui_text">@color/black</color>
+    <color name="blue_ui_color_pressed">@color/material_blue_100</color>
+    <color name="hint_color">#CACACA</color>
+    <color name="stick_normal">@color/dark_primary</color>
+    <color name="stick_pressed">#141414</color>
+    <color name="square_pressed">#585858</color>
+    <color name="divider">#1FFFFFFF</color>
+    <color name="transport_pressed">#66FFFFFF</color>
+    <color name="uisearch_background">@color/dark_primary</color>
+    <color name="uisearch_pressed">#585858</color>
+    <color name="uisearch_icon_tint">#E2FFFFFF</color>
+    <color name="uisearch_hint">#B7FFFFFF</color>
+    <color name="uisearch_textcolor">#F7F7F7</color>
+    <color name="dest_activity_backboard">#A9414141</color>
+    <color name="uicolor">#ECECEC</color>
+    <color name="uicolor_inverted">#121212</color>
+
+    <color name="uicolor_text_high">#DEFFFFFF</color>
+    <color name="uicolor_text_medium">#99FFFFFF</color>
+    <color name="background">#080808</color> <!-- Material color: 121212 || SAMSUNG COLOR: #080808 -->
+    <color name="activity_header">@color/black</color> <!-- Material color: 121212 -->
+    <color name="settings_block">@color/material_gray_900</color> <!-- material grey 100 -->
+
+    <color name="ripple">#86303030</color>
+    <color name="error">@color/material_red_200</color>
+    <color name="header_overlay">@color/material_gray_100</color>
+
+    <color name="material_header">#D9202020</color>
+    <color name="inapp_msg">#5B000000</color>
+    <color name="app_system_bars">@color/background</color>
+    <color name="material_overlay">@color/material_gray_900</color>
+
+    <color name="material_red">@color/material_red_200</color>
+    <color name="success_action">@color/material_green_200</color>
+    <color name="dialog_background">#151515</color>
+
+    <color name="rounded_corner_button">@color/dark_primary</color>
+    <color name="pretty_toast">#F23A3A3A</color>
+    <color name="polyline_color">#B5B5B5</color>
+    <color name="cardview_infobar">#272724</color>
+    <color name="primaryColor">#99A2A2A2</color>
+    <color name="material_button_text_color">@color/white</color>
+
+
+    <color name="white_accent">#1C1C1C</color>
+    <color name="white_accent_pressed">#3E3E3E</color>
+    <color name="start_spoofing">#81C784</color>
+    <color name="stop_btn_color">#FF7043</color>
+    <color name="red_tonal_button">#E57373</color>
+    <color name="stop_tonal_button">#FFCC80</color>
+
+</resources>

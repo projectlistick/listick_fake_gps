@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Listick Fake GPS</string>
+    <string name="settings">Impostazioni</string>
+    <string name="continue_text">Continuare</string>
+    <string name="permissions">Autorizzazioni</string>
+    <string name="need_permissions">Per continuare, concedere le autorizzazioni seguenti: </string>
+    <string name="error_get_currentloc">Impossibile ottenere la posizione corrente.</string>
+    <string name="mock_location_permission">Posizioni Fittizie</string>
+    <string name="open_developer_settings">Posizioni Fittizie</string>
+    <string name="unknown_error">Errore sconosciuto</string>
+    <string name="unknown">Sconosciuto</string>
+    <string name="search_by_coordinates">Ricerca per coordinate</string>
+    <string name="Address">Indirizzo:</string>
+    <string name="enter_value">Immettere un valore!</string>
+    <string name="settings_of_accuracy">Accuratezza</string>
+    <string name="enter_accuracy_value">La accuratezza varierà</string>
+    <string name="enter_updates_time_value">Differenza di tempo in secondi</string>
+    <string name="accuracy_settings">Accuratezza</string>
+    <string name="gps_updates_delay_name">Ritardo di aggiornamento</string>
+    <string name="gps_updates_delay">Ritardo di aggiornamento</string>
+    <string name="route_settings">Percorso</string>
+    <string name="cancel">Cancellazione</string>
+    <string name="mock_locations">Posizioni fittizie</string>
+    <string name="where_to">Dove?</string>
+    <string name="from">Da: %1$s</string>
+    <string name="copyright">© Membri Di OpenStreetMaps</string>
+    <string name="wikimedia_contributors">| Wikimedia Maps</string>
+    <string name="origin">Da dove?</string>
+    <string name="destination">Dove?</string>
+    <string name="mock_loc_is_disabled">Le Posizioni fittizie sono disabilitate nelle impostazioni.</string>
+    <string name="select_on_map">Indicare sulla mappa</string>
+    <string name="search_name">Ricerca</string>
+    <string name="about_of_the_app">Circa l\'applicazione</string>
+    <string name="brake_at_turning">Frenando prima dei giri</string>
+    <string name="give_mock_lock_permission">Per lo spoofing delle coordinate, si prega di fornire il permesso Posizioni fittizie nelle impostazioni dello sviluppatore.</string>
+    <string name="find_and_select_app">Trova Posizioni fittizie, e seleziona Listick Fake GPS.</string>
+    <string name="speed">Velocità</string>
+    <string name="difference">Differenza</string>
+    <string name="version">Versione</string>
+    <string name="no_internet">Nessuna connessione internet</string>
+    <string name="building_route">Aspetti, per favore. Creazione di un percorso…</string>
+    <string name="failed_to_define_address">Impossibile determinare l\'indirizzo.</string>
+    <string name="kiloabbr">km/h</string>
+    <string name="milesabbr">mph</string>
+    <string name="meterabbr">m/s</string>
+    <string name="location">Posizione</string>
+    <string name="location_perm_description">Per determinare la tua posizione</string>
+    <string-array name="unitList">
+        <item>Metro</item>
+        <item>Chilometri</item>
+        <item>Miglia</item>
+    </string-array>
+    <string name="where_from">Da dove?</string>
+    <string name="information">Informazione</string>
+    <string name="please_wait">Aspetti, per favore..</string>
+    <string name="error_grant_su_permission">Errore durante l\'installazione dei permessi di root.</string>
+    <string name="okay">OK</string>
+    <string name="confirmation">Conferma</string>
+    <string name="go_to_confirm_text"> Vuoi davvero iniziare a spoofing posizione?</string>
+    <string name="open_video">Guarda il video</string>
+    <string name="open_settings"> Apri Impostazioni</string>
+    <string name="back">Indietro</string>
+    <string name="developer_options_disabled">Funzionalità sviluppatore disabilitate!</string>
+    <string name="developer_options_instruction">1) Vai alle impostazioni<![CDATA[<br>]]>2) Cerca "informazioni sul telefono"<![CDATA[<br>]]>3)  Trova Numero di build e tocca per 7 volte<![CDATA[<br>]]>4) Torna alla finestra principale delle impostazioni e cerca"per gli sviluppatori"<![CDATA[<br>]]>6) Fare clic e selezionare Liststick Fake GPS.</string>
+    <string name="developer_options_instruction_miui">1) Spostarsi Impostazioni<![CDATA[<br>]]>2) Cerca "informazioni sul telefono"<![CDATA[<br>]]>3) Trova Versione MIUI"e tocca per 5-7 volte<![CDATA[<br>]]>4) Torna alla finestra principale delle impostazioni e cerca"per gli sviluppatori"<![CDATA[<br>]]>5) Cerca "Posizioni fittizie"<![CDATA[<br>]]>6) Fare clic e selezionare Liststick Fake GPS.</string>
+    <string name="miui_developer_instruction_link">https://www.youtube.com/watch?v=WjH6Y3oXrRY</string>
+    <string name="aosp_developer_instruction_link">https://www.youtube.com/watch?v=XvIodXALSYg</string>
+    <string name="oneui_developer_instruction_link">https://www.youtube.com/watch?v=cLGgmAVzu8I</string>
+    <string name="error_dest_loc">Impossibile ottenere l\'indirizzo di destinazione</string>
+    <string name="error">Avvertimento</string>
+    <string name="you_dont_select_dest">Non hai specificato la destinazione</string>
+    <string name="please_select_dest">Inserire la destinazione</string>
+    <string name="stop">Fermare</string>
+    <string name="search_locked_description">Hai già configurato o attivato la modalità, interrompere l\'operazione in corso per riavviare</string>
+    <string name="menu">Menu</string>
+    <string name="keep_center_of_current_location">Centrare la mappa sulle coordinate correnti</string>
+    <string name="origin_text">Da dove: </string>
+    <string name="where_to_text">Dove: </string>
+    <string name="updates">Aggiornamenti</string>
+    <string name="push_notification_name">Novità sull\'applicazione</string>
+    <string name="mocking_notification_control">Gestione dello stato</string>
+    <string name="notify_status_description">C\'è uno scambio lungo il percorso</string>
+    <string name="pause">Pausa</string>
+    <string name="settings_route_active_error">Completare innanzitutto il percorso attivo</string>
+    <string name="doubletap_to_exit">Premere di nuovo per uscire</string>
+    <string name="dont_enable_ml">Non includere Posizioni fittizie</string>
+    <string name="mock_location_activated">Posizioni fittizie incluse!</string>
+    <string name="warning">Avviso</string>
+    <string name="difference_error">Differenza (±) non può essere maggiore o uguale alla velocità</string>
+    <string name="joystick">Joystick</string>
+    <string name="draw_overlays_permission">Sovrapposizioni</string>
+    <string name="draw_overlays_summary">Per utilizzare il joystick è necessario il permesso, per il rendering di sovrapposizioni sullo schermo. Si prega di concedere l\'autorizzazione nella finestra che si apre, dopo aver fatto clic sul pulsante "Сoncedere"</string>
+    <string name="grant">Permettere</string>
+    <string name="joystick_mode">Joystick Mode</string>
+    <string name="from_current_loc">Dalla mia posizione corrente</string>
+    <string name="where_from_spoof">Da dove vuoi iniziare lo spoofing:</string>
+    <string name="start_joystick">Avvia joystick</string>
+    <string name="stop_joystick">chiudere il joystick</string>
+    <string name="select_start_point">Scegli un punto di partenza!</string>
+    <string name="firstly_close_joystick">Chiudi prima il joystick!</string>
+    <string name="joystick_max_speed">Specificare la velocità massima per il joystick:</string>
+    <string name="failed_get_currentloc">Impossibile determinare la tua posizione attuale!</string>
+    <string name="joystick_stop_mocking">Smetti di fare lo spoofing per usare il joystick!</string>
+    <string name="joystick_enabled_error">Per iniziare lo spoofing, prima interrompi la modalità joystick!</string>
+    <string name="joystick_enabled">Modalità joystick!</string>
+    <string name="enter_address">Inserisci l\'indirizzo!</string>
+    <string name="dev_settings_error">Impossibile aprire le opzioni sviluppatore. Puoi aprirli manualmente!</string>
+    <string name="location_deviation">Deviazione dalla posizione</string>
+    <string name="notification_status_control">Gestione dello Stato di spoofing</string>
+    <string name="go_to_coordinates">Vai alle coordinate</string>
+    <string name="enter_coodinates">Inserisci le coordinate</string>
+    <string-array name="map_tiles">
+        <item>Standard (OSM)</item>
+        <item>WikiMedia</item>
+    </string-array>
+    <string-array name="trafficSide">
+        <item>Guida a destra</item>
+        <item>Guida a sinistra</item>
+    </string-array>
+    <string name="share">Сondividere la posizione</string>
+    <string name="boookmarks">Preferiti</string>
+    <string name="add_in_boookmarks">Aggiungi ai preferiti</string>
+    <string name="static_spoof">Fisso</string>
+    <string name="route_spoof">Percorso</string>
+    <string name="bookmark_label">Titolo:</string>
+    <string name="where_from_info">Da dove</string>
+    <string name="start">Iniziare</string>
+    <string name="address">Indirizzo:</string>
+    <string name="remove">Rimuovere</string>
+    <string name="could_not_get_location">Impossibile ottenere la posizione. Controlla se i servizi di localizzazione sono abilitati.</string>
+    <string name="failed_to_build_route">Errore! Impossibile costruire un percorso lungo le strade</string>
+    <string name="rate_app">Vota l\'app!</string>
+    <string name="empty_field_error">Errore! Il campo non può essere vuoto</string>
+    <string name="auto_altitude_detection">Rilevamento automatico dell\'altezza</string>
+    <string name="altitude">Altezza</string>
+    <string name="detecting_altitude">Determinare l\'altezza...</string>
+    <string name="altitude_detection_failed">Impossibile determinare l\'altezza!</string>
+    <string name="altitude_determined">L\'altezza è determinata con successo!</string>
+    <string name="nothing_to_view">Non c\'e\'niente qui!</string>
+    <string name="spoofing">Lo scambio</string>
+    <string name="closed_route">Percorso chiuso</string>
+    <string name="restore_to_real_location">Ritorno alla posizione iniziale</string>
+    <string name="restore_to_real_location_confirm">Vuoi davvero riportare la posizione del telefono a quella reale? (potrebbe volerci un po\')</string>
+    <string name="joystick_altitude_warn">La sostituzione dell\'altitudine non è temporaneamente disponibile!</string>
+    <string name="minutes">Minuti</string>
+    <string name="seconds">Seconda</string>
+    <string name="parking_time_label">Parcheggio al punto di partenza:</string>
+    <string name="m_abbr">min.</string>
+    <string name="s_abbr">sec.</string>
+    <string name="auto">Auto</string>
+    <string name="route_built">Percorso costruito</string>
+    <string name="altitude_above_sea_level">Altitudine:</string>
+    <string name="enter_addr_or_coordinates">Inserisci Indirizzo/Coordinatе:</string>
+    <string name="add_more_route">Aggiungere un altro punto?</string>
+    <string name="please_enable_location_services">Servizi di localizzazione disabilitati</string>
+    <string name="remote_route">Rimuovi percorso</string>
+    <string name="resume">Continuare</string>
+    <string name="edit">Editare</string>
+    <string name="start_spoofing">Inizia lo spoofing</string>
+    <string name="about_view_source_code"><![CDATA[Il codice sorgente è disponibile all\'indirizzo %1$s<br/>Unisciti al nostro %2$s canale<br/> Vi preghiamo di aiutarci con la traduzione dell\'applicazione. Per saperne di più vai su GitHub]]></string>
+    <string name="location_deviation_summary">La posizione cambierà leggermente se non c\'è movimento</string>
+    <string name="auto_altitude_summary">Cambio di altezza automatico quando si cambia posizione</string>
+    <string name="brake_at_turning_summary">Ridurre la velocità durante la svolta</string>
+    <string name="spoofing_preferences_title">Opzioni di sostituzione</string>
+    <string name="measurement_title">Misurazioni</string>
+    <string name="accuracy_title">Accuratezza</string>
+    <string name="enter_valid_value">Immettere il valore corretto</string>
+    <string name="units_title">Unità di misura</string>
+    <string name="map_tiles_title">Mappe</string>
+    <string name="traffic_side_title">Lato di movimento</string>
+
+</resources>

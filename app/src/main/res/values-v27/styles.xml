@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="E2ETransparentTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme" parent="LightTheme">
+        <item name="android:statusBarColor">@color/app_system_bars</item>
+        <item name="android:navigationBarColor">@color/app_system_bars</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="E2ETheme" parent="AppTheme">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:statusBarColor">@color/app_system_bars</item>
+        <item name="android:navigationBarColor">@color/app_system_bars</item>
+    </style>
+</resources>

@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+def appVersion = '2.7.7'
+def mapsVersion = '6.1.14'
+def appVersionCode = 36
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "project.listick.fakegps"
+        minSdkVersion 23
+        targetSdkVersion 32
+        versionCode appVersionCode
+        versionName appVersion
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.debug
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    def date = new Date().format('yyyyMMddHHmmssSSS');
+                    outputFileName = "${applicationId}_${versionName}-${versionCode}_${date}_minAPI23.apk"
+                }
+            }
+
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    packagingOptions {
+        exclude 'resources.arsc'
+        exclude 'AndroidManifest.xml'
+    }
+    sourceSets {
+        main {
+            aidl.srcDirs = ['src/main/aidl']
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'com.google.android.material:material:1.8.0-alpha01'
+    implementation 'com.google.firebase:firebase-core:21.1.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.13'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+    implementation "org.osmdroid:osmdroid-android:${mapsVersion}"
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'com.github.tiann:FreeReflection:3.1.0'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+
+    implementation files("${rootDir}/syslibs/manager.jar")
+    implementation 'androidx.fragment:fragment:1.5.2'
+    implementation ("androidx.preference:preference:1.2.0") {
+        exclude group: "androidx.lifecycle", module: "lifecycle-viewmodel-ktx"
+    }
+    implementation ("dev.rikka.rikkax.material:material-preference:2.0.0") {
+        exclude group: "dev.rikka.rikkax.appcompat", module: "appcompat"
+        exclude group: "androidx.lifecycle", module: "lifecycle-viewmodel-ktx"
+    }
+}

@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="header_text">36dp</dimen>
+    <dimen name="speed_text_size">18sp</dimen>
+    <dimen name="speed_margin">5dp</dimen>
+    <dimen name="uisearchbar_horizontal">9dp</dimen>
+    <dimen name="uisearch_drawable_padding">4dp</dimen>
+    <dimen name="istyle_button_above_text">7dp</dimen>
+    <dimen name="activity_header_height">120dp</dimen>
+    <dimen name="osm_copyright_text_size">9sp</dimen>
+</resources>

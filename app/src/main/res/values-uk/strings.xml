@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Listick Fake GPS</string>
+    <string name="settings">Налаштування</string>
+    <string name="continue_text">Продовжити</string>
+    <string name="permissions">Дозволи</string>
+    <string name="need_permissions">Для продовження роботи надайте наступні дозволи: </string>
+    <string name="error_get_currentloc">Не вдалося отримати поточне розташування.</string>
+    <string name="mock_location_permission">Фіктивні Розташування</string>
+    <string name="open_developer_settings">Увімкнути Фіктивні Розташування</string>
+    <string name="unknown_error">Невідома помилка</string>
+    <string name="unknown">Невідомо</string>
+    <string name="search_by_coordinates">Пошук за координатами</string>
+    <string name="Address">Адрес:</string>
+    <string name="enter_value">Введіть значення!</string>
+    <string name="settings_of_accuracy">Точність</string>
+    <string name="enter_accuracy_value">Точність варіюватиметься.</string>
+    <string name="enter_updates_time_value">Різниця часу у секундах</string>
+    <string name="accuracy_settings">Точність</string>
+    <string name="gps_updates_delay_name">Затримка оновлення</string>
+    <string name="gps_updates_delay">Затримка оновлення</string>
+    <string name="route_settings">Маршрут</string>
+    <string name="cancel">Відміна</string>
+    <string name="mock_locations">Фіктивні розташування</string>
+    <string name="where_to">Куди?</string>
+    <string name="from">Від: %1$s</string>
+    <string name="copyright">© Участники OpenStreetMaps</string>
+    <string name="wikimedia_contributors">| Wikimedia Maps</string>
+    <string name="origin">Откуда</string>
+    <string name="destination">Куди?</string>
+    <string name="mock_loc_is_disabled">Фіктивні розташування вимкнено в налаштуваннях.</string>
+    <string name="select_on_map">Указать на карте</string>
+    <string name="search_name">Пошук</string>
+    <string name="about_of_the_app">Про додаток</string>
+    <string name="brake_at_turning">Гальмувати перед поворотами</string>
+    <string name="give_mock_lock_permission">Для заміни координат, будь ласка, надайте дозвіл "Фіктивні Розташування" в налаштуваннях розробника.</string>
+    <string name="find_and_select_app">Знайдіть пункт "Фіктивні розташування", натисніть та виберіть Listick Fake GPS.</string>
+    <string name="speed">Швидкість</string>
+    <string name="difference">Відмінність</string>
+    <string name="version">Версія</string>
+    <string name="no_internet">Відсутнє підключення до Інтернету</string>
+    <string name="building_route">Будь ласка, зачекайте. Побудова маршруту...</string>
+    <string name="failed_to_define_address">Не вдалося визначити адресу.</string>
+    <string name="kiloabbr">км/ч</string>
+    <string name="milesabbr">миль/ч</string>
+    <string name="meterabbr">м/с</string>
+    <string name="location">Розташування</string>
+    <string name="location_perm_description">Для визначення Вашого розташування</string>
+    <string-array name="unitList">
+        <item>Метри</item>
+        <item>Кілометри</item>
+        <item>Милі</item>
+    </string-array>
+    <string name="where_from">Звідки?</string>
+    <string name="information">Інформація</string>
+    <string name="please_wait">Будь ласка, зачекайте...</string>
+    <string name="error_grant_su_permission">Помилка отримання прав суперкористувача.</string>
+    <string name="okay">OK</string>
+    <string name="confirmation">Підтвердження</string>
+    <string name="go_to_confirm_text">Ви дійсно хочете розпочати заміну розташування?</string>
+    <string name="open_video">Подивитись відео</string>
+    <string name="open_settings">Відкрити налаштування</string>
+    <string name="back">Назад</string>
+    <string name="developer_options_disabled">Функції розробника вимкнено!</string>
+    <string name="developer_options_instruction">1) Перейдіть до налаштувань<![CDATA[<br>]]>2) Знайдіть пункт "Про телефон"<![CDATA[<br>]]>3) Знайдіть пункт "Номер збірки" та натисніть 7 разів<![CDATA[<br>]]>4) Поверніться до головного вікна налаштувань і знайдіть пункт "Для розробників"<![CDATA[<br>]]>5) Знайдіть пункт "Фіктивні розташування" або "Симуляція розташування"<![CDATA[<br>]]>6)  Натисніть та виберіть Listick Fake GPS.</string>
+    <string name="developer_options_instruction_miui">1) Перейдіть в налаштування<![CDATA[<br>]]>2) Знайдіть пункт "Про телефон"<![CDATA[<br>]]>3)  Знайдіть пункт "Версія MIUI" і натисніть 5-7 разів<![CDATA[<br>]]>4) Поверніться до головного вікна налаштувань і знайдіть пункт "Для розробників"<![CDATA[<br>]]>5) Знайдіть пункт "Фіктивні розташування"<![CDATA[<br>]]>6) Натисніть та виберіть Listick Fake GPS.</string>
+    <string name="miui_developer_instruction_link">https://www.youtube.com/watch?v=WjH6Y3oXrRY</string>
+    <string name="aosp_developer_instruction_link">https://www.youtube.com/watch?v=XvIodXALSYg</string>
+    <string name="oneui_developer_instruction_link">https://www.youtube.com/watch?v=cLGgmAVzu8I</string>
+    <string name="error_dest_loc">Помилка отримання адреси місцяя призначення</string>
+    <string name="error">Попередження</string>
+    <string name="you_dont_select_dest">Ви не вказали пункт призначення!</string>
+    <string name="please_select_dest">Будь ласка, вкажіть пункт призначення</string>
+    <string name="stop">Зупинити</string>
+    <string name="search_locked_description">У Вас вже збудований або активований статичний режим, зупиніть поточні операції щоб перейти до пошуку</string>
+    <string name="menu">Меню</string>
+    <string name="keep_center_of_current_location">Центрувати карту на поточні координати</string>
+    <string name="origin_text">Звідки: </string>
+    <string name="where_to_text">Куди: </string>
+    <string name="updates">Оновлення</string>
+    <string name="push_notification_name">Новини додатка</string>
+    <string name="mocking_notification_control">Управління статусом</string>
+    <string name="notify_status_description">Йде підміна за маршрутом</string>
+    <string name="pause">Пауза</string>
+    <string name="settings_route_active_error">Спочатку завершіть активний маршрут</string>
+    <string name="doubletap_to_exit">Натисніть ще раз щоб вийти</string>
+    <string name="dont_enable_ml">Не вмикати фіктивні розташування</string>
+    <string name="mock_location_activated">Фіктивні розташування включені!</string>
+    <string name="warning">Попередження</string>
+    <string name="difference_error">Різниця (±) не може бути більшою або дорівнює швидкості</string>
+    <string name="joystick">Джойстик</string>
+    <string name="draw_overlays_permission">Накладення</string>
+    <string name="draw_overlays_summary">Для роботи джойстика потрібен дозвіл для відображення накладень на екрані. Будь ласка, надайте дозвіл у вікні після натискання на кнопку "Надати"</string>
+    <string name="grant">Надати</string>
+    <string name="joystick_mode">Joystick Mode</string>
+    <string name="from_current_loc">З мого поточного розташування</string>
+    <string name="where_from_spoof">Звідки ви хочете почати заміну:</string>
+    <string name="start_joystick">Запустити джойстик</string>
+    <string name="stop_joystick">Закрити джойстик</string>
+    <string name="select_start_point">Виберіть стартову точку!</string>
+    <string name="firstly_close_joystick">Спочатку закрийте джойстик!</string>
+    <string name="joystick_max_speed">Вкажіть максимальну швидкість для джойстика:</string>
+    <string name="failed_get_currentloc">Не вдається визначити Ваше поточне місцезнаходження!</string>
+    <string name="joystick_stop_mocking">Для використання джойстика зупиніть заміну розташування!</string>
+    <string name="joystick_enabled_error">Для початку заміни спочатку зупиніть режим джойстика!</string>
+    <string name="joystick_enabled">Режим джойстика!</string>
+    <string name="enter_address">Вкажіть адресу!</string>
+    <string name="dev_settings_error">Не вдалося відкрити налаштування розробника. Ви можете відкрити їх вручну!</string>
+    <string name="location_deviation">Відхилення від розташування</string>
+    <string name="notification_status_control">Управління статусом заміни</string>
+    <string name="go_to_coordinates">Перейти по координатам</string>
+    <string name="enter_coodinates">Введіть координати</string>
+    <string-array name="map_tiles">
+        <item>Стандарт (OSM)</item>
+        <item>WikiMedia</item>
+    </string-array>
+    <string-array name="trafficSide">
+        <item>Правосторонній рух</item>
+        <item>Лівосторонній рух</item>
+    </string-array>
+    <string name="share">Поділитися місцем розташування</string>
+    <string name="boookmarks">Закладки</string>
+    <string name="add_in_boookmarks">Додати в закладки</string>
+    <string name="static_spoof">Фіксований</string>
+    <string name="route_spoof">Маршрут</string>
+    <string name="bookmark_label">Назва:</string>
+    <string name="where_from_info">Звідки</string>
+    <string name="start">Почати</string>
+    <string name="address">Адрес:</string>
+    <string name="remove">Видалити</string>
+    <string name="could_not_get_location">Не вдалося отримати місцезнаходження. Перевірте, чи увімкнені сервіси визначення позиціонування.</string>
+    <string name="failed_to_build_route">Помилка! Не вдалося побудувати маршрут дорогами</string>
+    <string name="rate_app">Оцінити додаток!</string>
+    <string name="empty_field_error">Помилка! Поле не може бути порожнім</string>
+    <string name="auto_altitude_detection">Автовизначення висоти</string>
+    <string name="altitude">Висота</string>
+    <string name="detecting_altitude">Визначаємо висоту...</string>
+    <string name="altitude_detection_failed">Не вдалось визначити висоту!</string>
+    <string name="altitude_determined">Висота визначена успішно!</string>
+    <string name="nothing_to_view">Тут нічого немає!</string>
+    <string name="spoofing">Підміна</string>
+    <string name="closed_route">Замкнений маршрут!</string>
+    <string name="restore_to_real_location">Повернення розташування</string>
+    <string name="restore_to_real_location_confirm">Ви дійсно хочете повернути розташування телефону до реального? (це може зайняти деякий час)</string>
+    <string name="joystick_altitude_warn">Підміна висоти тимчасово недоступна!</string>
+    <string name="minutes">Хвилин</string>
+    <string name="seconds">Секунд</string>
+    <string name="parking_time_label">Стоянка на початковій точці:</string>
+    <string name="m_abbr">хв.</string>
+    <string name="s_abbr">сек.</string>
+    <string name="auto">Авто</string>
+    <string name="route_built">Маршрут збудовано</string>
+    <string name="altitude_above_sea_level">Висота над рівнем моря:</string>
+    <string name="enter_addr_or_coordinates">Введіть адресу/координати:</string>
+    <string name="add_more_route">Додати ще точку?</string>
+    <string name="please_enable_location_services">Служби геолокації відключені</string>
+    <string name="remote_route">Прибрати маршрут</string>
+    <string name="resume">Продовжити</string>
+    <string name="edit">Редагувати</string>
+    <string name="start_spoofing">Почати заміну</string>
+    <string name="about_view_source_code"><![CDATA[Вихідний код доступен на %1$s<br/> Приєднуйтесь до нашого %2$s канала<br/>Будь-ласка, допоможіть нам з перекладом програми. Детальніше на GitHub]]></string>
+    <string name="location_deviation_summary">Розташування буде незначно змінюватися, якщо рух відсутній</string>
+    <string name="auto_altitude_summary">Автоматична заміна висоти під час заміни розташування</string>
+    <string name="brake_at_turning_summary">Зменшувати швидкість при повороті</string>
+    <string name="spoofing_preferences_title">Параметри заміни</string>
+    <string name="measurement_title">Вимірювання</string>
+    <string name="accuracy_title">Точність</string>
+    <string name="enter_valid_value">Введіть вірне значення</string>
+    <string name="units_title">Одиниці вимірювання</string>
+    <string name="map_tiles_title">Карти</string>
+    <string name="traffic_side_title">Сторона руху</string>
+
+</resources>
