@@ -1,4 +1,4 @@
-# Listick Fake GPS
+# project listick
 Application for the spoofing your coordinates by satellite and cellular networks. This will help you if you are a developer, or so that no one knows where you really are. All you need to do is to specify a new location to change your location information. Most applications you run will get dummy coordinates, and your real location will be hidden.
 
 #### Features:
@@ -32,5 +32,4 @@ There are two ways to do this:
 2. The second way: Move .apk of Listick Fake GPS in /system/priv-app/ manually. You can use TWRP or System App Converter to do this.
 
 ## License
-Listick Fake GPS is distributed under https://github.com/listickfakegps/listick_fake_gps/blob/main/LICENSE.md
-Please, keep the original app name on forks.
+Listick Fake GPS is distributed under GNU GPL V3.
